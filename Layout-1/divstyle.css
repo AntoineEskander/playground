@@ -1,0 +1,16 @@
+div.content {
+  border: 5px solid black;
+  background-color: blueviolet;
+  width: 150px;
+  height: 150px;
+  float: left;
+  margin: 20px;
+}
+
+div#frame3 {
+  background-color: red;
+}
+
+div#frame1 {
+  background-color: yellow;
+}
