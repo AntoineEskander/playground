@@ -1,0 +1,46 @@
+<!doctype html>
+<html>
+  <head>
+    <style>
+      div {
+        margin-top: 1px;
+        width: 300px;
+        /*border:1px solid black;*/
+      }
+    </style>
+  </head>
+
+  <body>
+    <input id="inputQRText" type="text" placeholder="QR Information" />
+    <div id="divQRCode">
+      QR Code
+      <script type="text/javascript">
+        var qrcode = new QRCode("qrcode");
+
+        function makeCode() {
+          var elText = document.getElementById("inputQRText");
+          if (!elText.value) {
+            alert("No QR Information");
+            etText.focus();
+            return;
+          }
+
+          qrcode.makecode(elText.value);
+        }
+
+        makeCode();
+
+        {
+          /*var qrcode = new QRCode("test", {
+                                    text: "some information",
+                                    width: 128,
+                                    height: 128,
+                                    colorDark : "#000000",
+                                    colorLight : "#ffffff",
+                                    correctLevel : QRCode.CorrectLevel.H
+                                });*/
+        }
+      </script>
+    </div>
+  </body>
+</html>

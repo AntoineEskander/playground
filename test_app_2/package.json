@@ -1,6 +1,0 @@
-{
-  "name": "test_app_2",
-  "dependencies": {
-    "tsx": "^4.16.2"
-  }
-}
